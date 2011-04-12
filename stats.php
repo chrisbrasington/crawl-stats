@@ -244,7 +244,7 @@ function display($player)
 	print('Level ');
 	print($player['xl']);
 
-	print "HP ";
+	print " HP ";
 	if($player['status'] != 'dead')
 	{
 		print($player['hp']);
