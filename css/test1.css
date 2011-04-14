@@ -1,0 +1,68 @@
+body
+{
+background: #002936;
+font: bold italic small-caps 1.5em/2em verdana,sans-serif;
+color:gray;
+font-size:14px;
+line-height: 1.2;
+}
+a, a:visited, a:active {
+color: white;
+text-decoration: none;
+}
+a:hover {
+color: white;
+text-decoration: none;
+}
+h1{
+color:white;
+font-size: 1.2em;
+letter-spacing:28px;
+float:left;
+margin: 0 1em  0 1em;	
+}
+#header{
+color:white;
+font-size: 2em;
+letter-spacing:5px;
+float:left;
+margin: 0 1em  0 1em;
+}
+#contain{
+text-align: left;
+width: 980px;
+margin: 0 auto
+}
+#player
+{
+float:right;
+background: #003942;
+color:white;
+width:800px;
+font-size: 1em;	
+margin:1em;
+
+}
+#player .active{background: #007056;width:98%;float:right;margin:0.5em;}
+#player .active5{background: #03A780;width:98%;float:right;margin:0.5em;}
+#player .active10{background: #38C3FF;width:98%;float:right;margin:0.5em;}
+#player .dead{background: #780000;width:98%;float:right;margin:0.5em;}
+#player .saved{background: #006878;width:98%;float:right;margin:0.5em;}
+
+#player .name{
+font-size:1em;
+padding: .5em  0 0 .7em;
+float:left;
+}
+
+#player .status{
+float:right;
+font-size:1em;
+padding: .7em .7em 0 0;
+
+}
+
+#player .stats{
+float:left;
+padding: .5em  0 0 .7em;
+}

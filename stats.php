@@ -1,102 +1,10 @@
-<!--<META HTTP-EQUIV=Refresh CONTENT="10">   page refresh -->
-<style type="text/css">
-body
-{
-background: #002936;
-font: bold italic small-caps 1.5em/2em verdana,sans-serif;
-color:gray;
-width:100%;
-font-size:14px;
-line-height: 1.2;
-margin-bottom:10em;
-}
-a, a:visited, a:active {
-color: white;
-text-decoration: none;
-}
-a:hover {
-color: white;
-text-decoration: none;
-}
-h1{
-color:white;
-font-size: 1.2em;
-letter-spacing:28px;
-float:left;
-width:90%;
-margin: 0 1em  0 1em;	
-}
-h2
-{
-letter-spacing:1px;
-float:right;
-
-margin: 0 20em 0 0;	
-font-size:1em;
-}
-
-#header{
-color:white;
-font-size: 2em;
-letter-spacing:5px;
-float:left;
-margin: 0 1em  0 1em;
-}
-#contain{
-height:100%;
-width:100%;
-text-align: left;
-float:left;
-}
-#player{
-background: #003942;
-margin: 0 2em 1em 1em;
-color:white;
-float:left;
-width:26em;
-padding:0.5em 0.5em 0 1em;
-font-size: 10px;
-}
-#player .active{background: #007056;width:110%;float:right;margin-bottom:  1em;}
-#player .active5{background: #03A780;width:110%;float:right;margin-bottom:  1em;}
-#player .active10{background: #38C3FF;width:110%;float:right;margin-bottom:  1em;}
-#player .dead{background: #780000;width:110%;float:right;margin-bottom:  1em;}
-#player .saved{background: #006878;width:110%;float:right;margin-bottom:  1em;}
-
-#player .name{
-float:left;
-font-size:1.8em;
-width:100%;
-height:2.2em;
-padding: 0 0 0 .4em;
-letter-spacing:3px;
-}
-#player .status{
-float:right;
-font-size:1.2em;
-margin: -1.5em 0.5em 0 0;
-}
-#player .stats{
-float:left;
-font-size:1.4em;
-padding:  .2em 0 0 1.2em;
-}
-#debug
-{
-color:white;
-font-size: 1em;
-letter-spacing:5px;
-float:left;
-margin:1em;
-width:1000px;
-font: 1.0em/2em verdana,sans-serif;
-line-height: 1.5;
-}
-<!-- margin: top right bottom left -->
-
-</style>
+<META HTTP-EQUIV=Refresh CONTENT="10">   <!-- page refresh -->
 <title>crawl stats</title>
-<html><body><div id="contain">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body><div id="contain">
 
 <h1>-------------- crawl stats</h1>
 
@@ -106,7 +14,12 @@ $debug = false;
 
 // associative array of names
 // "username" => "realName" (if wish)
-$names = array("chrs" => "Chris", "simonj" => "Matt");
+$names = array("chrs" => "Chris", "Eclisiast" => "Geddy", "Malyzapan" => "Anthony",
+                          "Dragon" => "Tyler", "pgs2a" => "Gray",
+                          "simonj" => "Matt", "Speranza" => "Kevin",
+                          "yumari" => "Joseph", "saiydan21" => "Daniel",
+                          "domo" => "Dom");
+
 
 // associative array of one character's stats			  
 $statArray = array();
@@ -360,4 +273,5 @@ if( $debug )
 }
 
 ?>
+</body>
 </html>
