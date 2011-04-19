@@ -10,7 +10,7 @@
 
 <?php
 
-$debug = false;
+$debug = true;
 
 // associative array of names
 // "username" => "realName" (if wish)
@@ -178,14 +178,21 @@ function display($player)
 
 	echo '<br>';  
 	
-	if( $player['place'] == "D" )
-		print "Dungeon";
+	if( $player['place'] == "Trove" )
+	{
+		print "Looting the Treasure Trove";
+	}
 	else
-		print $player['place'];
+	{
+		if( $player['place'] == "D" )
+			print "Dungeon";
+		else
+			print $player['place'];
 		
-	echo ' Floor : ';
-	print $player['lvl'];
-	
+		echo ' Floor : ';
+		print $player['lvl'];
+	}
+
 	echo '<br>';
 	print "Skilled at ";
 	print $player['sk'];
