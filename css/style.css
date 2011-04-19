@@ -58,8 +58,10 @@ font-size: 10px;
 #player .active{background: #007056;width:110%;float:right;margin-bottom:  1em;}
 #player .active5{background: #03A780;width:110%;float:right;margin-bottom:  1em;}
 #player .active10{background: #38C3FF;width:110%;float:right;margin-bottom:  1em;}
+#player .active20{background: #E8D500;width:110%;float:right;margin-bottom:  1em;}
 #player .dead{background: #780000;width:110%;float:right;margin-bottom:  1em;}
 #player .saved{background: #006878;width:110%;float:right;margin-bottom:  1em;}
+#player .won{background: #E8D500;width:110%;float:right;margin-bottom:  1em;}
 
 #player .name{
 float:left;

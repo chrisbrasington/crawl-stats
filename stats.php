@@ -28,6 +28,7 @@ $statArray = array();
 $active = array();
 $saved = array();
 $dead = array();
+$won = array();
 
 // loop every name
 foreach ($names as $key => $value)
@@ -75,7 +76,13 @@ function cmp($a, $b)
 usort($active, "cmp");
 usort($saved, "cmp");
 usort($dead, "cmp");
+usort($won, "cmp");
 
+// WON!
+foreach($won as $character )
+{
+	display($character);
+}
 
 // display active
 foreach($active as $character )
@@ -106,6 +113,9 @@ function display($player)
 	
 		switch ($player['status'] )
 		{
+			case 'won':
+				echo '<div class="won">';
+			break;
 			case 'active':
 				if( $player['xl'] >= 10 )
 					echo '<div class="active10">';
@@ -125,9 +135,15 @@ function display($player)
 		$link = strtolower($player['name']);
 		echo "<a href=\"http://crawl.akrasiac.org/scoring/players/{$link}.html\">";	
 		print $names[$player['name']];
-		print " the ";
-		print($player['title']);
-	
+		
+		if( $player['status'] == "won" )
+			print " has WON THE GAME!";
+		else
+		{
+			print " the ";
+			print($player['title']);
+		}
+
 		echo "</a>";
 	
 	echo '</div>';
